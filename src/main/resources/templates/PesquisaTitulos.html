@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html 
+	xmlns="https://www.w3.org/1999/xhtml"
+	xmlns:th="https://www.thymeleaf.org"
+	xmlns:layout="https://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{LayoutPadrao}"
+>
+<head>
+	<title>Pesquisa</title>
+</head>
+<body>
+	<section layout:fragment="conteudo">
+		<form action="/titulo" method="POST">
+			<div class="col-sm-6" style="margin: 50px 70px">
+				<div class="card">
+					<h5 class="card-header">Novo Titulo</h5>
+					<div class="card-body">
+						<table class="table table-bordered table-striped">
+							<thead>
+								<th scope="col" class="text-center">#</th>
+								<th scope="col">Descrição</th>
+								<th scope="col" class="text-left">Data de vencimento</th>
+								<th scope="col" class="text-right">Valor</th>
+								<th scope="col" class="text-center">Status</th>
+								<th scope="col"></th>
+							</thead>
+							<tbody>
+								<tr>
+									<td colspan="6">Nenhum Registrado Encontrado</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</form>
+	</section>
+</body>
+</html>
